@@ -1,83 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <title>Vineeta Dmello | Data & BI Analyst Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
-header { background: #111; color: #fff; padding: 40px; text-align: center; }
-section { padding: 40px; max-width: 900px; margin: auto; }
-h2 { color: #222; }
-.project-box { background: #fff; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-a { color: #0077cc; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+  overflow-x: hidden;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.2s ease forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.45);
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+/* HERO SECTION */
+header {
+  text-align: center;
+  padding: 180px 20px 120px;
+  background: linear-gradient(135deg, #6f9cf9 0%, #b15cff 100%);
+  color: white;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: white;
+  color: #6f3dfc;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(255,255,255,0.4);
+}
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(255,255,255,0.6);
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* GLASS CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+  animation: fadeIn 1.4s ease forwards;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+  color: #555;
+}
+
+/* LINKS */
+a {
+  color: #6f3dfc;
+  font-weight: 600;
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Vineeta Dmello</h1>
+<!-- NAVBAR -->
+<nav>
+  <div style="font-weight:700; font-size:20px;">Vineeta Dmello</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="fade-in">
+  <h1>Hello, I'm Vineeta 👋</h1>
   <p>Data & BI Analyst • SQL • Python • Power BI • dbt • Snowflake</p>
-  <p>Newark, NJ • <a href="mailto:dmellovineeta@gmail.com" style="color:#4dabf7;">Email</a> • <a href="https://linkedin.com" style="color:#4dabf7;">LinkedIn</a></p>
+  <a class="resume-btn" href="VineetaDmello_Resume.pdf" download>Download Resume</a>
 </header>
 
-<section>
-<h2>About Me</h2>
-<p>Data & BI Analyst with 5+ years of experience designing scalable data models, ETL pipelines, and dashboards that drive operational and strategic decision-making across Finance, Healthcare, HR, GTM, Sales, and Marketing teams. Skilled in SQL, Python, dbt, Snowflake, Power BI, and analytics engineering.</p>
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <h2>About Me</h2>
+  <p style="font-size:18px; text-align:center; max-width:800px; margin:auto;">
+    Data & BI Analyst with 5+ years of experience designing scalable data models, ETL pipelines,
+    and analytics dashboards that improve strategic and operational decision-making. Skilled in SQL, Python,
+    Power BI, dbt, Snowflake, and data engineering workflows.
+  </p>
 </section>
 
-<section>
-<h2>Selected Projects Across Domains</h2>
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+  <h2>Highlighted Projects</h2>
 
-<div class="project-box">
-  <h3>📈 Finance Analytics — Fraud & Revenue Risk Detection</h3>
-  <p>Built an end-to-end fraud analytics engine using Python, SQL, and dbt. Generated 5,000+ synthetic transactions, applied anomaly detection, built reusable dbt models, and created risk-monitoring dashboards in Power BI.</p>
-  <p><strong>Tech:</strong> Python, Pandas, dbt, SQL, Snowflake, Power BI</p>
-  <p><strong>View:</strong> <a href="#">(Add GitHub link later)</a></p>
-</div>
+  <div class="card">
+    <h3>📈 Finance — Fraud & Revenue Risk Analytics</h3>
+    <p>Built a full fraud-detection pipeline using Python, SQL, and dbt. Included anomaly detection, synthetic data
+    generation, feature engineering, and Power BI dashboards.</p>
+    <strong>Tech:</strong> Python, SQL, dbt, Power BI, Snowflake
+  </div>
 
-<div class="project-box">
-  <h3>📊 Marketing Analytics — Campaign ROI & A/B Test Optimization</h3>
-  <p>Analyzed multi-channel marketing performance using SQL and Power BI. Built KPI frameworks (CAC, ROAS, CTR, Conversion), automated DAX-based dashboards, and ran statistically-valid A/B tests improving engagement.</p>
-  <p><strong>Tech:</strong> SQL, Python, Power BI, DAX</p>
-  <p><strong>View:</strong> <a href="#">(Add GitHub link later)</a></p>
-</div>
+  <div class="card">
+    <h3>📊 Marketing — A/B Test & Campaign ROI Optimization</h3>
+    <p>Designed KPI frameworks and A/B test engines using Python + SQL. Built Power BI dashboards to track CTR,
+    ROAS, CAC and optimize campaign spend.</p>
+    <strong>Tech:</strong> SQL, Python, Power BI
+  </div>
 
-<div class="project-box">
-  <h3>👩‍⚕️ Healthcare Analytics — Patient Utilization & Risk Stratification</h3>
-  <p>Designed an analytics pipeline to forecast patient utilization trends with 40% higher accuracy. Built anomaly detection for claims data and automated KPI dashboards improving clinical decision-making.</p>
-  <p><strong>Tech:</strong> SQL, Python, Power BI, Predictive Modeling</p>
-  <p><strong>View:</strong> <a href="#">(Add GitHub link later)</a></p>
-</div>
+  <div class="card">
+    <h3>🏥 Healthcare — Patient Risk & Utilization Forecasting</h3>
+    <p>Created forecasting models and dashboards for patient utilization trends, with 40% accuracy improvement.
+    Automated anomaly detection in claims data.</p>
+    <strong>Tech:</strong> Python, SQL, Power BI
+  </div>
 
-<div class="project-box">
-  <h3>🧑‍💼 HR Analytics — Workforce Planning & Attrition Modeling</h3>
-  <p>Built HR dashboards analyzing onboarding time, performance metrics, attrition risk, and training outcomes. Automated ingestion frameworks reducing manual HR data prep by 80%.</p>
-  <p><strong>Tech:</strong> SQL, Power BI, dbt, Python</p>
-  <p><strong>View:</strong> <a href="#">(Add GitHub link later)</a></p>
-</div>
+  <div class="card">
+    <h3>👥 HR — Workforce Planning & Attrition Modeling</h3>
+    <p>Built HR dashboards analyzing performance, onboarding time, and attrition risk. Automated ETL, reducing
+    HR prep effort by 80%.</p>
+    <strong>Tech:</strong> SQL, Power BI, dbt, Python
+  </div>
 
-<div class="project-box">
-  <h3>🚀 GTM Analytics — Product Adoption & Cohort Analysis</h3>
-  <p>Conducted cohort analysis on feature adoption using SQL. Delivered insights influencing roadmap design and increasing workflow engagement by identifying drop-off points and retention levers.</p>
-  <p><strong>Tech:</strong> SQL, dbt, Snowflake, Power BI</p>
-  <p><strong>View:</strong> <a href="#">(Add GitHub link later)</a></p>
-</div>
+  <div class="card">
+    <h3>🚀 GTM — Product Adoption Cohort Analytics</h3>
+    <p>Created SQL and dbt-based cohort models to understand activation, retention, and product engagement.
+    Informed product roadmap decisions.</p>
+    <strong>Tech:</strong> SQL, dbt, Snowflake
+  </div>
 
-<div class="project-box">
-  <h3>💼 Sales Analytics — Pipeline Velocity & Revenue Forecasting</h3>
-  <p>Created revenue forecasting models (Python + SQL) with 40% higher accuracy. Built executive Power BI dashboards showing pipeline velocity, win rates, quota attainment & churn patterns.</p>
-  <p><strong>Tech:</strong> SQL, Python, Power BI, Time-Series Modeling</p>
-  <p><strong>View:</strong> <a href="#">(Add GitHub link later)</a></p>
-</div>
+  <div class="card">
+    <h3>💼 Sales — Pipeline Velocity & Revenue Forecasting</h3>
+    <p>Built Python forecasting models and Power BI dashboards tracking win rates, quota attainment, and pipeline
+    velocity. Improved forecast accuracy by 40%.</p>
+    <strong>Tech:</strong> Python, SQL, Power BI
+  </div>
 
 </section>
 
-<section>
-<h2>Resume</h2>
-<p>View my full resume here:</p>
-<p><a href="VineetaDmello_Resume.pdf">Download Resume</a></p>
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <h2>Contact</h2>
+  <p style="text-align:center; font-size:18px;">
+    📩 Email: <a href="mailto:dmellovineeta@gmail.com">dmellovineeta@gmail.com</a><br>
+    🔗 LinkedIn: <a href="https://linkedin.com">linkedin.com/in/vineetadmello</a><br>
+  </p>
 </section>
+
+<footer>
+  © 2025 Vineeta Dmello | Crafted with 💜 & Glassmorphism
+</footer>
 
 </body>
 </html>
