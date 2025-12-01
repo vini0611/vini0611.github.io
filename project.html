@@ -19,65 +19,65 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  padding: 18px 40px;
+  padding: 15px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
   backdrop-filter: blur(15px);
   z-index: 999;
 }
 
 nav a {
-  color: #222;
+  color: white;
   text-decoration: none;
-  margin-left: 22px;
+  margin: 0 22px;
   font-weight: 600;
   font-size: 18px;
   transition: 0.3s;
 }
-nav a:hover { color: white; }
 
-/* PROJECTS GRID */
+nav a:hover { color: #ffeecc; }
+
+/* PROJECT SECTION */
 section {
   max-width: 1100px;
   margin: auto;
-  padding: 120px 20px 70px;
+  padding: 120px 20px 60px;
 }
 
 h2 {
   text-align: center;
   color: #222;
-  font-size: 40px;
-  margin-bottom: 40px;
+  font-size: 36px;
+  margin-bottom: 35px;
 }
 
+/* CARDS */
 .card {
   background: rgba(255, 255, 255, 0.55);
-  padding: 30px;
-  border-radius: 20px;
+  padding: 25px;
+  border-radius: 18px;
   backdrop-filter: blur(15px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-  margin-bottom: 28px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
   transition: 0.3s ease;
-  animation: slideUp 0.9s ease forwards;
-  opacity: 0;
-}
-.card:hover {
-  transform: scale(1.03) translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
 }
 
-/* slide animation */
-@keyframes slideUp {
-  to { opacity: 1; transform: translateY(0); }
+.card:hover {
+  transform: scale(1.03) translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 footer {
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 </style>
@@ -87,49 +87,72 @@ footer {
 
 <!-- NAVBAR -->
 <nav>
-  <div style="font-weight:700; font-size:24px;">Vineeta</div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-  </div>
+  <a href="index.html">Home</a>
+  <a href="project.html">Projects</a>
 </nav>
 
+<!-- PROJECTS -->
 <section>
 <h2>My Projects</h2>
 
 <div class="card">
   <h3>📈 Finance — Fraud Analytics Engine</h3>
-  <p>End-to-end fraud detection pipeline using Python, SQL, dbt, and Power BI dashboards.</p>
+  <p>
+    Designed a complete fraud-detection pipeline that simulates real-world financial behavior. 
+    Built 5,000+ synthetic transactions using Python, engineered red-flag features like velocity, 
+    amount spikes, and geo anomalies, and modeled fraud risk in dbt.  
+    Power BI dashboards visualize fraud clusters and suspicious user segments, enabling proactive risk mitigation.
+  </p>
 </div>
 
 <div class="card">
   <h3>📊 Marketing — A/B Testing & ROI Optimization</h3>
-  <p>Built KPI frameworks & AB testing frameworks to improve conversions and campaign efficiency.</p>
+  <p>
+    Built a data-driven A/B testing framework to evaluate campaign performance across channels.  
+    Engineered KPI models for CTR, ROAS, CAC, and uplift; automated experiment scoring; and surfaced high-performing 
+    audiences that improved conversion rates and optimized ad spend.
+  </p>
 </div>
 
 <div class="card">
   <h3>🏥 Healthcare — Patient Utilization Forecasting</h3>
-  <p>Time-series forecasting & anomaly detection for claims and patient-level analytics.</p>
+  <p>
+    Developed a robust time-series forecasting system using synthetic claims data.  
+    Identified anomalies in visit patterns, built forecasting pipelines in Python, and visualized utilization trends 
+    for more accurate operational planning in healthcare environments.
+  </p>
 </div>
 
 <div class="card">
   <h3>👥 HR — Workforce & Attrition Analytics</h3>
-  <p>Built models predicting attrition and onboarding efficiency. Automated HR ETL pipelines.</p>
+  <p>
+    Built predictive models identifying employees at risk of churn using performance and engagement metrics.  
+    Automated HR ETL pipelines improved data quality, and dashboards highlighted onboarding efficiency and retention 
+    opportunities for HR leadership.
+  </p>
 </div>
 
 <div class="card">
   <h3>🚀 GTM — Product Adoption Cohorts</h3>
-  <p>SQL + dbt cohort models identifying activation, retention, and workflow drop-offs.</p>
+  <p>
+    Engineered SQL + dbt cohort models to uncover activation, adoption, and retention trends.  
+    Identified workflow drop-offs and feature behaviors tied to higher product stickiness, directly informing roadmap 
+    decisions for GTM teams.
+  </p>
 </div>
 
 <div class="card">
   <h3>💼 Sales — Revenue Forecasting Models</h3>
-  <p>Power BI forecasting dashboards improving revenue accuracy by 40%.</p>
+  <p>
+    Created forecasting models using Python + SQL to improve revenue predictability.  
+    Built Power BI dashboards analyzing pipeline velocity, win-rate patterns, and quota attainment, resulting in 
+    more accurate planning and executive visibility.
+  </p>
 </div>
 
 </section>
 
-<footer>© 2025 Vineeta Dmello • Colorful. Animated. Data-driven.</footer>
+<footer>© 2025 Vineeta Dmello</footer>
 
 </body>
 </html>
