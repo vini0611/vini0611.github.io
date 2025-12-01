@@ -15,24 +15,19 @@ body {
   color: #333;
 }
 
-/* Page fade animations */
+/* Fade + Slide Animations */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.2s ease forwards;
 }
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
+@keyframes fadeIn { to { opacity: 1; } }
 
-/* Slide animation */
 .slide-up {
   opacity: 0;
   transform: translateY(40px);
   animation: slideUp 1.2s ease forwards;
 }
-@keyframes slideUp {
-  to { opacity: 1; transform: translateY(0); }
-}
+@keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
 
 /* NAVBAR */
 nav {
@@ -58,9 +53,7 @@ nav a {
   font-size: 18px;
   transition: 0.3s;
 }
-nav a:hover {
-  color: #fff;
-}
+nav a:hover { color: #fff; }
 
 /* HERO SECTION */
 header {
@@ -150,7 +143,7 @@ footer {
 <!-- HERO -->
 <header class="fade-in">
   <h1>Hello, I'm Vineeta 👋</h1>
-  <p>Data & BI Analyst | Python | SQL | Power BI | dbt | Snowflake</p>
+  <p>Data & BI Analyst • SQL • Python • Power BI • dbt • Snowflake</p>
   <a class="btn" href="VineetaDmello_Resume.pdf" download>Download Resume</a>
 </header>
 
@@ -158,37 +151,41 @@ footer {
 <section class="slide-up">
   <h2>About Me</h2>
 
-  <div class="about-box">
+  <div class="about-box slide-up">
 
     <p style="font-size:20px; line-height:1.7;">
-      I'm <strong>Vineeta</strong> — a Data & BI Analyst who loves turning chaotic data into clean,
-      beautiful dashboards and powerful stories.  
-      <br><br>
 
-      I’ve worked across Finance, Healthcare, HR, GTM, Sales, and Marketing analytics — building
-      automated pipelines, KPI frameworks, cohort models, and predictive insights that help teams make smarter decisions.  
+      I'm <strong>Vineeta</strong> — a Data & BI Analyst who loves transforming messy data into clean
+      models, dashboards, and insights that make people say: “Omg finally this makes sense.”
+
       <br><br>
 
       When I'm not debugging SQL or designing dbt models, you’ll probably find me:
       <br>✨ eating good food  
       <br>✨ planning last-minute trips  
-      <br>✨ or fixing someone else’s dashboard  
+      <br>✨ hunting for the perfect café  
+      <br>✨ fixing someone else’s dashboard because I "just noticed something weird"  
+
       <br><br>
 
       <strong>Education:</strong><br>
       🎓 Master’s in Data Science — Stevens Institute of Technology  
-      🎓 Bachelor’s in IT + MBA in Financial Markets — Mumbai University  
+      <br>
+      🎓 Bachelor's in IT + Financial Markets — Mumbai University  
+
       <br><br>
 
       <strong>Work Experience:</strong><br>
-      💼 Analytics Associate — Ascendion Inc (2023–Present)  
+      💼 Data & BI Analyst — Ascendion Inc (2023–Present)  
+      <br>
       💼 Data Analyst — Decimal Point Analytics (2019–2020)  
+
     </p>
 
   </div>
 </section>
 
-<footer>© 2025 Vineeta Dmello • </footer>
+<footer>© 2025 Vineeta Dmello • Crafted with 💜 + Colorful Vibes</footer>
 
 </body>
 </html>
