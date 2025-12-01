@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Projects | Vineeta Dmello</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  z-index: 999;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  margin-left: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+}
+nav a:hover { color: white; }
+
+/* PROJECTS GRID */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 20px 70px;
+}
+
+h2 {
+  text-align: center;
+  color: #222;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  margin-bottom: 28px;
+  transition: 0.3s ease;
+  animation: slideUp 0.9s ease forwards;
+  opacity: 0;
+}
+.card:hover {
+  transform: scale(1.03) translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+/* slide animation */
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div style="font-weight:700; font-size:24px;">Vineeta</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+  </div>
+</nav>
+
+<section>
+<h2>My Projects</h2>
+
+<div class="card">
+  <h3>📈 Finance — Fraud Analytics Engine</h3>
+  <p>End-to-end fraud detection pipeline using Python, SQL, dbt, and Power BI dashboards.</p>
+</div>
+
+<div class="card">
+  <h3>📊 Marketing — A/B Testing & ROI Optimization</h3>
+  <p>Built KPI frameworks & AB testing frameworks to improve conversions and campaign efficiency.</p>
+</div>
+
+<div class="card">
+  <h3>🏥 Healthcare — Patient Utilization Forecasting</h3>
+  <p>Time-series forecasting & anomaly detection for claims and patient-level analytics.</p>
+</div>
+
+<div class="card">
+  <h3>👥 HR — Workforce & Attrition Analytics</h3>
+  <p>Built models predicting attrition and onboarding efficiency. Automated HR ETL pipelines.</p>
+</div>
+
+<div class="card">
+  <h3>🚀 GTM — Product Adoption Cohorts</h3>
+  <p>SQL + dbt cohort models identifying activation, retention, and workflow drop-offs.</p>
+</div>
+
+<div class="card">
+  <h3>💼 Sales — Revenue Forecasting Models</h3>
+  <p>Power BI forecasting dashboards improving revenue accuracy by 40%.</p>
+</div>
+
+</section>
+
+<footer>© 2025 Vineeta Dmello • Colorful. Animated. Data-driven.</footer>
+
+</body>
+</html>
